@@ -34,4 +34,6 @@
     * @ApiModelProperty
     
 8. DevTools - Lombok
+    #### Lombok Annotations
+    * @Data
 
