@@ -36,4 +36,8 @@
 8. DevTools - Lombok
     #### Lombok Annotations
     * @Data
+    * @Getter
+    * @Setter
+    * @NoArgsConstructor
+    * etc...
 
