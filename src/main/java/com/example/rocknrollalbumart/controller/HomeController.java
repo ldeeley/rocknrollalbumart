@@ -6,6 +6,8 @@ import com.example.rocknrollalbumart.service.AlbumService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,12 +21,15 @@ import java.util.List;
 @RequestMapping("/api/v1")
 public class HomeController {
 
+    Logger logger = LoggerFactory.getLogger(HomeController.class);
+
     @Autowired
     private AlbumService albumService;
 
     @ApiOperation(value = "get single Album details", response = Album.class)
     @GetMapping("/{id}")
     public Album getAlbum(@PathVariable Integer id){
+        logger.trace("getAlbum method in HomeController called");
         return albumService.getAllAlbums().get(id);
     }
 
@@ -37,6 +42,7 @@ public class HomeController {
     @ApiOperation(value = "get all Album details", response = Iterable.class)
     @GetMapping("/")
     public List<Album> getAlbums(){
+        logger.trace("getAlbums method in HomeController called");
         return albumService.getAllAlbums();
     }
 

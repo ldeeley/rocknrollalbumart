@@ -40,4 +40,6 @@
     * @Setter
     * @NoArgsConstructor
     * etc...
+9.  Logging - SLF4J, Logback
+    * application.properties - logging.level.com.example.rocknrollalbumart=TRACE
 
