@@ -2,9 +2,11 @@ package com.example.rocknrollalbumart.model;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 
 @ApiModel(description = "Album Model")
-public class Album {
+public @Data
+class Album {
 
     @ApiModelProperty(notes="ID of the Album", name="id",required = true,value = "int")
     private int id;
@@ -18,29 +20,5 @@ public class Album {
         this.title = title;
         this.albumArt = albumArt;
 
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getAlbumArt() {
-        return albumArt;
-    }
-
-    public void setAlbumArt(String albumArt) {
-        this.albumArt = albumArt;
     }
 }
