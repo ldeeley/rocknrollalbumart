@@ -1,6 +1,6 @@
 # RocknRollAlbumArt project
 
-## Learning Objectives
+## Learning Objectives - SPRINT 1
 
 1. Spring Boot MVC
     #### Annotations
