@@ -43,3 +43,16 @@
 9.  Logging - SLF4J, Logback
     * application.properties - logging.level.com.example.rocknrollalbumart=TRACE
 
+## Learning Objectives - SPRINT 2
+
+1. Docker
+    #### Docker commands
+    
+    * Docker image/Dockerfile
+    * Docker containers
+    * DockerHub repository
+    * $ docker images
+    * $ docker pull mysql:5.6  [ to pull a specific image]
+    
+    
+    
