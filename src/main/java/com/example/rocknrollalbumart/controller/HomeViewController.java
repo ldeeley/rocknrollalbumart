@@ -9,12 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class HomeViewController {
 
-    @Value("static message")
-    private String greetingMessage;
-
     @RequestMapping("/home")
     public String welcome(){
-        System.out.println(greetingMessage);
         return "index";
     }
 
